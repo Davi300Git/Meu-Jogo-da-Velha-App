@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MeuJogoDaVelhaApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/system_accent1_200</item>
+        <item name="colorPrimaryContainer">@color/system_accent1_700</item>
+        <item name="colorOnPrimary">@color/system_accent1_800</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/system_accent2_200</item>
+        <item name="colorSecondaryContainer">@color/system_accent2_700</item>
+        <item name="colorOnSecondary">@color/system_accent2_800</item>
+        <!-- Tertiary brand color. -->
+        <item name="colorTertiary">@color/system_accent3_200</item>
+        <item name="colorTertiaryContainer">@color/system_accent3_700</item>
+        <item name="colorOnTertiary">@color/system_accent3_800</item>
+
+            <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.MeuJogoDaVelhaApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MeuJogoDaVelhaApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MeuJogoDaVelhaApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
