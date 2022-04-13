@@ -1,12 +1,25 @@
 <resources>
     <string name="app_name">Meu Jogo da Velha App</string>
     <string name="action_settings">Settings</string>
-    <string name="jogad1">Player 1 |X|</string>
-    <string name="jogad2">Player 2 |O|</string>
-    <string name="placa1">Placar 1</string>
-    <string name="placa2">Placar 2</string>
+    <string name="jogad1">Player 1 |%1$s|</string>
+    <string name="jogad2">Player 2 |%1$s|</string>
+    <string name="placa1">0</string>
+    <string name="placa2">0</string>
+    <string name="Qvelhas">0</string>
+    <style name="resetar">Deseja Resetar</style>
+
     <string name="venceu">Parabéns, você ganhou!!!</string>
     <string name="velha">Deu Velha!!</string>
+
+    <string name="resetar">Reseta o placar</string>
+    <string name="inicio">Voltar á tela inicial</string>
+    <string name="preferencias">Preferências</string>
+    <string name="simb_jog1">Símbolo do Jogador1</string>
+    <string name="simb_jog2">Símbolo do Jogador2</string>
+    <string name="summary_jog1">Escolha o símbolo do Jogador 1</string>
+    <string name="summary_jog2">Escolha o símbolo do Jogador 2</string>
+
+    <string name="jogar">Jogo da Velha</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
