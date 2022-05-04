@@ -36,7 +36,7 @@ public class JogoFragment extends Fragment {
     // matriz de String que representa o tabuleiro
     private String[][] tabuleiro;
     // variaveis para os simbolos
-    private String simbJog1, simbJog2, simbolo;
+    private String simbJog1, simbJog2, simbolo, nomejoga1, nomejoga2, nome ;
     // variaveis Random para
     private Random random;
     // variavel para controlar o numero de jogadas
@@ -87,10 +87,13 @@ public class JogoFragment extends Fragment {
         //defini os simbolos do jogador1 e do jogador2
         simbJog1 = PrefsUtil.getSimboloJog1(getContext());
         simbJog2 = PrefsUtil.getSimboloJog2(getContext());
+        //defini os nomes do jogador1 e do jogador2
+        nomejoga1 = PrefsUtil.getNomeJog1(getContext());
+        nomejoga2 = PrefsUtil.getNomeJog2(getContext());
 
         //atualizar o placar com os simbolos
-        binding.jogador1.setText(getResources().getString(R.string.jogad1,simbJog1));
-        binding.jogador2.setText(getResources().getString(R.string.jogad2,simbJog2));
+        binding.jogador1.setText(getResources().getString(R.string.jogad1, nomejoga1, simbJog1));
+        binding.jogador2.setText(getResources().getString(R.string.jogad2, nomejoga2, simbJog2));
 
         // instancia o Random
         random = new Random();

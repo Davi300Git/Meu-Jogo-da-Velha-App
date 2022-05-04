@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.preference.EditTextPreference
         android:icon="@android:drawable/ic_menu_manage"
         android:key="simb_jog_1"
@@ -10,4 +11,17 @@
         android:key="simb_jog_2"
         android:title="@string/simb_jog2"
         android:summary="@string/summary_jog2"/>
+
+    <androidx.preference.EditTextPreference
+        android:key="jogador1"
+        android:summary="@string/summary_jogador_1"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/simb_jogador1"
+        />
+    <androidx.preference.EditTextPreference
+        app:title="@string/simb_jogador2"
+        android:key="jogador2"
+        android:summary="@string/summary_jogador_2"
+        android:icon="@android:drawable/ic_menu_manage"
+        />
 </androidx.preference.PreferenceScreen>

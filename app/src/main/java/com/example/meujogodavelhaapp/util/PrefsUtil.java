@@ -20,4 +20,19 @@ public class PrefsUtil {
             editor.putString("simb_jog_1", simbolo);
             editor.commit();
         }
+        public static String getNomeJog1(Context context) {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        return  preferences.getString("jogador1", "NomedoJogador1");
+        }
+        public static String getNomeJog2(Context context) {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        return  preferences.getString("jogador2", "NomedoJogador2");
+    }
+
+    public static void setNomeJog1(String nome,Context context) {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("jogador1", nome);
+        editor.commit();
+    }
 }
