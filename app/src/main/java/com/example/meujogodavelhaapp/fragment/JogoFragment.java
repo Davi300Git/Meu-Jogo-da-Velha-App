@@ -177,7 +177,7 @@ public class JogoFragment extends Fragment {
         for (Button botao : botoes){
             botao.setClickable(true);
             botao.setText("");
-            botao.setBackgroundColor(getResources().getColor(R.color.purple_200));
+            botao.setBackgroundColor(getResources().getColor(R.color.system_accent1_700));
         }
         for (String[] vetor : tabuleiro){
             Arrays.fill(vetor, "");
